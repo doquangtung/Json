@@ -32,11 +32,11 @@ public class JsonItem extends AppCompatActivity {
         String bs = getIntent().getStringExtra("bs");
 
         TextView view_username = findViewById(R.id.usernameItem);
-        view_username.setText("User name: " + username);
+        view_username.setText(username);
         TextView view_name = findViewById(R.id.name);
-        view_name.setText("Name: " + name);
+        view_name.setText(name);
         TextView view_email = findViewById(R.id.emailItem);
-        view_email.setText("Email: " + email);
+        view_email.setText(email);
 
         TextView view_address = findViewById(R.id.address);
         String address = "Street : " + street +
@@ -51,9 +51,9 @@ public class JsonItem extends AppCompatActivity {
                 "\nBS: " + bs;
         view_company.setText(company);
         TextView view_phone = findViewById(R.id.phone);
-        view_phone.setText("Phone: " + phone);
+        view_phone.setText(phone);
         TextView view_website = findViewById(R.id.website);
-        view_website.setText("Website: " + website);
+        view_website.setText(website);
 
         ImageView img_photo = findViewById(R.id.photo);
         Picasso.with(this).load(photo).into(img_photo);
